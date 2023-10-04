@@ -1,0 +1,642 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/bebasneue-regular-webfont.woff);
+}
+@font-face{
+    font-family: "germania";
+    src: url(../fonts/germaniaone-regular-webfont.woff);
+}
+@font-face {
+    font-family: "Russo One";
+    src: url(../fonts/russoone-regular-webfont.woff);
+}
+
+/* style utama */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+/* .banner {
+    width: 100%;
+    height: 5%;
+}
+.banner video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+.back-vidio{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .back-vidio{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-vidio{
+        width: auto;
+        height: 100%;
+    }
+}
+body{
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+@keyframes Animasiteks {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+@keyframes sapik{
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+
+.header i{
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 1300px;
+    font-size: 2rem;
+    color: #ffffff ;
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+.header i:hover{
+    color: red;
+    
+}
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+    /* position: absolute; */
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #1D1E1C;
+	font-size: 100px;
+    padding: 0px;
+    margin-top: -10px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255, 255, 255, 0.842); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(116, 116, 116, 0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(151, 151, 151, 0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(29,30,28,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 100;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color:rgba(0, 0, 0,.5);
+    box-shadow: 0px 8px 15px;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header a h1{
+    text-align: left;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+}
+
+.header li a{
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.5s;
+    transform: scale(0) ;
+}
+
+.header li a:hover{
+    background-color: #0328f7;
+    padding: 10px;
+    border-radius: 6px;
+    transform: scale(1);
+}
+
+.header li{
+    position: relative;
+    display: inline-block;
+    /* background-color: white; */
+    text-align: center;
+    left: 40%;
+    top: -50px;
+    margin-right: 10px; 
+    font-size: 14px;
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+@keyframes animate {
+    to {
+      background-position: 200% center;
+    }
+}
+@keyframes syafiq{
+    0% {
+        transform:  translate(0%, -10%);
+    }
+    50% {
+        transform:  translate(0%, 10%);
+    }
+    100% {
+        transform:  translate(0%, -10%);
+    }
+}
+
+.container{
+    position: relative;
+    width: 700px;
+    height: 4   00px;
+    background-color: rgba(0, 0, 0,.5);
+    margin: auto;
+    margin-top:0px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616) ;
+    border-radius: 5px;
+    animation: syafiq 5s linear 0s infinite normal none; 
+}
+.container a{
+    text-decoration: none;
+}
+.container .deskripsi{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-indent: 8px;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    line-height: normal;
+}
+.container h2{
+    font-size: 35px;
+    font-family: "germania";
+    padding-left: 25px;
+    font-weight: 300;
+    background: linear-gradient(to right, #ffffff 20%, #1c45f5 40%, #02fcefcc 60%, #572fb3 80%);
+    background-size: 200% auto;
+    color: #000;
+    text-shadow: inset 0px 0px 5px rgba(19, 18, 18, 0.479);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 3s linear infinite;
+}
+.gallery{
+    overflow: hidden;
+    margin: auto;
+}
+
+.gallery li .san{
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(61, 61, 61, 0.5);
+    position: absolute;
+    font-family: 'BebasNeue',sans-serif;
+    font-size: 25px;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 1px #d30303;
+    transition: 0.3s;
+    transform: scale(0) rotate(0);
+}
+
+.gallery li a:hover .san{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.gallery li{
+    z-index: 99;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center; 
+    left: 250px;
+    bottom: 0; 
+    box-shadow: 0px 0px 0px   rgba(27, 21, 21, 0.25);
+    animation: sapik 2s ease 0s 1 alternate none;
+    transition: all 0.5s;
+    float: left
+}
+
+.gallery li:hover{
+    opacity: 100%;
+    box-shadow: 10px 80px 50px -20px  rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+/* overlay */
+
+.overlay{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(0,0,0);
+    z-index: 9999;
+    transition: 0.8s;
+    text-align: center;
+    padding: 100px 0;
+}
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 1,.493) ;
+}
+
+.overlay img{
+    max-height: 100%;
+    
+}
+
+.overlay .content .close{
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    position: absolute;
+    top: -10px;
+    margin-left: 490px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px;
+    opacity: 0;
+    z-index: 9999;
+    transition: 0.2s;
+}
+.overlay .content .close:hover{
+    background-color: #d30303;
+    opacity: 1;
+}
+.overlay:target .close{
+    /* animation: slideDownFade .5s .5s forwards; */
+    animation: Fadeaja 1s forwards;
+}
+.overlay:target .next{
+    animation: Fadeaja .5s .5s forwards  ;
+}
+.overlay:target .prev{
+    animation: Fadeaja .5s .5s forwards  ;
+}
+.overlay:target button{
+    animation: Fadeaja 1.5s forwards;
+}
+
+.overlay .content img{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: -400px; 
+    transform: scale(1);
+    filter: brightness(80%);
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+
+.overlay .content img:hover{
+    transform: scale(1.1) translateY(-5px);
+    filter: brightness(100%);
+    filter: contrast(100%);
+    opacity: 1;
+    box-shadow: -4px -9px 144px 58px rgba(16, 137, 250, 0.74);
+}
+
+.overlay .content{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    box-sizing: border-box;
+    /* background-color: violet; */
+    top: -20px;
+    left: 250px ;
+}
+
+
+.overlay .content div{
+    width: 600px;
+    height: 500px;
+    background-color: #312d3d;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 300px;
+}
+
+
+.overlay .content div{
+    background-image: url(../img/bg\ img);
+    background-size: cover;
+    filter: brightness(100%);
+}
+
+.overlay .content div h1{
+    font-size: 50px;
+    padding: 20px;
+    font-family: "BebasNeue";
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 3px 5px black;
+}
+.overlay .content div p{
+    float: left;
+    padding: 10px;
+    text-align: left;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    text-indent: 10px;
+    font-size: 16px;
+    text-shadow:   1px 1px 2px black,
+    0 0 1em blue,
+    0 0 0.2em blue;;
+}
+/* animasi */
+@keyframes Fadeaja{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes zoomDanFade{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.overlay:target .content{
+    animation: Fadeaja 1s;
+}
+
+@keyframes slideDownFade{
+    0%{
+        opacity: 0;
+        margin-top:-20px;
+
+    }
+
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/* navigasi */
+.next, .prev{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/full/pngwing\ 1.png);
+    position:absolute;
+    text-indent: -9999px;
+    margin-top: -280px;
+    margin-left: 500px;
+    opacity: 0;
+}
+
+.prev{
+    background-image: url(../img/full/pngwing\ 2.png);
+    margin-left: -520px;
+
+}
+
+
+/* deskripsi tesk */
+@keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+button{
+    position: absolute;
+    font-family: "Poppins";
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    top: 590px;
+    border: 0px solid rgb(61, 106, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    z-index: 1;
+}
+
+button:hover {
+    background: rgb(61, 106, 255);
+    border-radius: 6px;
+    box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.24);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+    content: '';
+    width: 0px;
+    height: 86%;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
+
+/* huruf gede */
+.gurita{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+.pari{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.hiu{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.paus{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.kuda{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.penyu{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
